@@ -39,8 +39,13 @@ for(var key in values) {
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
+function showValues(values) { 
+  var text = "";
+  var x;
+  for (x in values){
+    text =+ values[x] + "";
+  }
+  showValues(text)
 }
 
 
@@ -52,8 +57,9 @@ function showValues( obj ) {
   Write a for in loop that loops over the object and changes any value that is greater than 10 to 0. 
   Return the updated object.
 */
+function greaterThan10(obj){
 
-//Code Here
+}
 
 
 
@@ -65,7 +71,9 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function double (obj){
+
+}
 
 
 
@@ -79,7 +87,9 @@ function showValues( obj ) {
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-//Code Here
+function secrets(obj){
+  
+}
 
 
 
@@ -89,17 +99,17 @@ function showValues( obj ) {
   Uncomment the example below to see a for in loop deleting all the properties inside an object.
 */
 
-// var deleteAllThethings = {
-//   one: 1,
-//   two: 2,
-//   three: 3
-// }
+var deleteAllThethings = {
+  one: 1,
+  two: 2,
+  three: 3
+}
 
-// for(var key in deleteAllThethings) {
-//   delete deleteAllThethings[key]
-// }
+for(var key in deleteAllThethings) {
+  delete deleteAllThethings[key]
+}
 
-// console.log(deleteAllThethings)
+console.log(deleteAllThethings)
 
 
 
@@ -110,9 +120,13 @@ function showValues( obj ) {
   Delete the property password and return the object.
 */
 
-//Code Here
+function removePassword(obj){}
 
+for(var key in obj){
+  delete obj[key]
+}
 
+console.log(removePassword(obj))
 
 ////////// PROBLEM 6 //////////
 
