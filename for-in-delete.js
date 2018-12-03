@@ -58,7 +58,9 @@ function showValues(values) {
   Return the updated object.
 */
 function greaterThan10(obj){
+  for (var key in value){
 
+  }
 }
 
 
@@ -72,7 +74,9 @@ function greaterThan10(obj){
 */
 
 function double (obj){
-
+  for (const prop in obj){
+    return(obj[prop]*=2)
+  }
 }
 
 
@@ -88,6 +92,10 @@ function double (obj){
 */
 
 function secrets(obj){
+  let string = ''
+  for (var prop in obj){
+    string += obj[prop];
+  }
   
 }
 
@@ -143,7 +151,11 @@ var deleteTheBigNumbers = {
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-//Code Here
+for(const >100 in deletTheBigNumbers){
+  return(delete deleteTheBigNumbers[>100])
+
+}
+
 
 
 
@@ -156,8 +168,16 @@ var deleteTheBigNumbers = {
   Return the updated object.
 */
 
-//Code Here
+let startsWithK=(obj)=>{
+  this.property='k';
+}
+startsWithK.prototype=obj;
 
+for ( const prop in obj){
+  if(obj.hasOwnProperty(prop)){
+    return(obj)
+  }
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -171,6 +191,14 @@ var deleteTheBigNumbers = {
   (hint: the method includes() may be of use...)
 */
 
-//Code Here
+let hiddenTreasure = (obj)=>{
+  for( const prop in obj){
+    if (obj[proo].includes('treasure')){
+    }else{
+      delete obj[prop]
+    }
+  }
+  return(obj[prop])
+}
 
 

@@ -32,8 +32,8 @@ let {color, make, model, year} = carDetails
 */
 
 function greeting( obj ) {
-  let {firstName, lastName, title} = {firstName: 'Henry', lastName: 'Von Eckleberry', title: 'Sir'}=
-  {firstName: 'Betty', lastName: 'LeJavascript', title: 'Queen'};
+  let {firstName, lastName, title} = {firstName: 'Henry', lastName: 'Von Eckleberry', title: 'Sir'};
+  let {firstName, lastName, title} = {firstName: 'Betty', lastName: 'LeJavascript', title: 'Queen'};
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -52,8 +52,15 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
+let obj = {
+  utah: 1,
+  california: 2,
+  texas: 3,
+  arizona: 4
+}
+
 function totalPopulation(obj){
-  {utah, california, texas, arizon}
+ let {utah, california, texas, arizon} = numobj
 }
 
 
@@ -68,8 +75,16 @@ function totalPopulation(obj){
   Push these new variables to an array and return the array. 
 */
 
-function ingredients(obj){
+let ingObj = {
+  carb:'',
+  fat:'',
+  protein:'',
+}
 
+function ingredients(ingObj){
+  ingObj=Object.keys(object).map(function(key))
+
+ return(Number(key), object[key]); 
 }
 
 
@@ -101,8 +116,6 @@ function largeNumbers( {first, second, third}){
   Find the longest array and return that array.
 */
 
-function numberGroups({a,b,c}){
-
-}
+function numberGroups({a,b,c})
 
 
