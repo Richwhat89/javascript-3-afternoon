@@ -168,19 +168,19 @@ class ProgressiveManager{
 class Machine {
   constructor(){
   this.widgets_made_count = 0;
-  this.wear_and_tear = 0;
+  this.wear_and_tear_count = 0;
   this.needs_reboot = false;
   }
   makeWidgets(num){
     this.widgets_made_count += num
-    this.wear_and_tear = Math.floor(this.widgets_made_count/50)
+    this.wear_and_tear_count = Math.floor(this.widgets_made_count/50)
   }
   fixMachine(){
-    this.needs_reeboot =true;
+    this.needs_reboot =true;
   }
-  reeboot(){
-    if(this.needs_reeboot = true){
-      this.wear_and_tear -= 10
+  reboot(){
+    return () =>{
+      this.wear_and_tear_count -= 10
       this.needs_reboot = false
     }
   }

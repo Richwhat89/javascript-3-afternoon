@@ -21,7 +21,7 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-let {color, make, model, year} = carDetails
+let {color, make, model, year} = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -32,8 +32,7 @@ let {color, make, model, year} = carDetails
 */
 
 function greeting( obj ) {
-  let {firstName, lastName, title} = {firstName: 'Henry', lastName: 'Von Eckleberry', title: 'Sir'};
-  let {firstName, lastName, title} = {firstName: 'Betty', lastName: 'LeJavascript', title: 'Queen'};
+  let {firstName, lastName, title} = obj;
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -60,7 +59,8 @@ let obj = {
 }
 
 function totalPopulation(obj){
- let {utah, california, texas, arizon} = numobj
+ let {utah, california, texas, arizona} = obj
+ return utah + california + texas + arizona
 }
 
 
@@ -82,9 +82,9 @@ let ingObj = {
 }
 
 function ingredients(ingObj){
-  ingObj=Object.keys(object).map(function(key))
+  let {carb, fat, protein} = ingObj
 
- return(Number(key), object[key]); 
+ return[carb, fat, protein]
 }
 
 
@@ -104,8 +104,9 @@ function ingredients(ingObj){
 */
 
 function largeNumbers( {first, second, third}){
+  
+  return Math.min(first, second, third)}
 
-}
 
 
 ////////// PROBLEM 6 //////////
@@ -116,6 +117,15 @@ function largeNumbers( {first, second, third}){
   Find the longest array and return that array.
 */
 
-function numberGroups({a,b,c})
+function numberGroups({a,b,c}){
+  if(a>b){
+    if(a>c){
+      return a
+    }else{
+      return c
+    }
+  }
+  return b
+}
 
 
